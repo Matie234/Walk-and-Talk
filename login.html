@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logowanie</title>
+</head>
+<body>
+    <h1>Logowanie</h1>
+    <form method="post" action="/login">
+        <label for="username">Nazwa użytkownika:</label><br>
+        <input type="text" id="username" name="username" required><br>
+        <label for="password">Hasło:</label><br>
+        <input type="password" id="password" name="password" required><br>
+        <input type="submit" value="Zaloguj">
+    </form>
+    <a href="{{ url_for('register') }}">Rejestracja</a>
+</body>
+</html>
